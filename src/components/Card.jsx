@@ -1,4 +1,4 @@
-import React from 'react';
+
 // import { Card } from 'antd';
 // const { Meta } = Card;
     // import duffle from "../assets/dufflebag.png";
@@ -48,9 +48,9 @@ import React from 'react';
 //         </div>
 //     )
 // }
+import React from 'react';
 import { Card } from 'antd';
 import { AddtoCartButton } from './AddToCartButton';
-import { Button } from 'antd';
 
 const { Meta } = Card;
 
@@ -64,13 +64,13 @@ export const Carrd = ({ items }) => {
               hoverable
               style={{
                 width: 250,
-                height:300,
+                height:320,
               }}
               cover={<img alt="example" src={item.image} />}
             >
-              <Meta title={item.title} />
+              <Meta title={item.title} description={item.description} />
             </Card>
-            <AddtoCartButton className="" label={"Add to Cart"}></AddtoCartButton>
+            <AddtoCartButton  label={"Add to Cart"}></AddtoCartButton>
           </div>
         ))}
       </div>

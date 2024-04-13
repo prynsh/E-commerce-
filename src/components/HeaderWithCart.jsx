@@ -2,7 +2,7 @@ import { SearchOutlined,HeartOutlined,ShoppingCartOutlined,UserOutlined } from "
 
 export function HeaderWithCart(){
     return (
-        <div className="grid grid-col-2 pb-16">
+        <div className="grid grid-col-2 pb-5">
             <div className="flex justify-between pl-28 pr-24 mr-10 pt-14">
                 <div className="font-bold text-4xl pt-2"> Exclusive</div>
                         <div className="flex justify-between space-x-16 pt-4">

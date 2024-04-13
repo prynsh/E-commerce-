@@ -8,9 +8,9 @@ import { SignIn } from './pages/SignIn';
 import { HomePage } from './pages/HomePage';
 import { CheckOut } from './pages/CheckOut';
 import { Cart } from './pages/Cart';
+import { AllProducts } from './pages/AllProducts';
 import React from 'react';
 import { Breadcrumb } from 'antd';
-import { Wishlist } from './pages/Wishlist';
 import { Trying } from './pages/Trying';
 
 function App() {
@@ -22,11 +22,10 @@ function App() {
       <Routes>
       <Route path="/" element={<SignUp />} />
       <Route path='/signin' element={<SignIn/>}/>
-      <Route path='/dashboard' element={<HomePage/>}/>
       <Route path='/checkout' element={<CheckOut/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/home' element={<HomePage/>}/>
-      <Route path='/wishlist' element={<Wishlist/>}/>
+      <Route path='/allproducts' element={<AllProducts/>}/>
       <Route path='/trying' element={<Trying/>}/>
       </Routes>
      

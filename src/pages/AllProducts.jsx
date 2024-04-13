@@ -14,22 +14,26 @@ import keyboard from "../assets/keyboard.png";
 import screen from "../assets/screen.png";
 import laptop from "../assets/laptop.png";
 
-export const Wishlist=()=>{
+export const AllProducts=()=>{
     const items = [
         {
           title: 'Gucci Duffle bag',
+          description:"$960",
           image: duffle,
         },
         {
           title: 'RGB liquid CPU Cooler',
+          description:"$1960",
           image: speaker,
         },
         {
           title: 'GP11 Shooter USB Gamepad',
+          description:"$550",
           image: console,
         },
         {
           title: 'Quilted Satin Jacket',
+          description:"$750",
           image: jacket,
         },
         
@@ -37,18 +41,22 @@ export const Wishlist=()=>{
       const item = [
         {
           title: 'ASUS FHD Gaming Laptop',
+          description:"$960",
           image: laptop,
         },
         {
           title: 'IPS LCD Gaming Monitor',
+          description:"$1160",
           image: screen,
         },
         {
           title: 'HAVIT HV-G92 Gamepad',
+          description:"$660",
           image: game,
         },
         {
           title: 'AK-900 Wired Keyboard',
+          description:"$200",
           image: keyboard,
         },
         
