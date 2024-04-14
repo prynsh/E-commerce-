@@ -12,9 +12,9 @@ export const Bread=()=>{
             {
                 title: <a href="/cart">Cart</a>,
             },
-            {
-                title: <a href="/checkout">CheckOut</a>,
-            },
+            // {
+            //     title: <a href="/checkout">CheckOut</a>,
+            // },
             ]} />
         </div>
     )

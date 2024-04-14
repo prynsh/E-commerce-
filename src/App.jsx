@@ -10,7 +10,6 @@ import { CheckOut } from './pages/CheckOut';
 import { Cart } from './pages/Cart';
 import { AllProducts } from './pages/AllProducts';
 import React from 'react';
-import { Breadcrumb } from 'antd';
 import { Trying } from './pages/Trying';
 
 function App() {
