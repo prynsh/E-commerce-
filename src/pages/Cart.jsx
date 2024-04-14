@@ -11,8 +11,10 @@ import { CartTotal } from "../components/CartTotal"
 import { useState } from "react"
 import { Bottom } from "../components/Bottom"
 import { Footer } from "../components/Footer"
+import { useNavigate } from "react-router-dom"
 
 export const Cart=()=>{
+    const navigate = useNavigate();
     const [items, setItems] = useState([
         { id: 1, image: screen, name: "LCD Monitor", price: 10, quantity: 1 },
         { id: 2, image: game, name: "H1 GamePad", price: 10, quantity: 1 }
@@ -47,9 +49,11 @@ export const Cart=()=>{
                 {...item}
                 onQuantityChange={handleQuantityChange}/>
                 ))}
-                <div className="flex justify-between px-28 pt-5">
-                    <div><Button className="font-semibold h-12">Return To Shop</Button></div>
-                    <div><Button className="font-semibold h-12">Update Cart</Button></div>
+                <div className="flex justify-end px-28 pt-5">
+                    <div><Button onClick={()=>{
+                        navigate("/allproducts")
+                    }} className="font-semibold h-12">Return To Shop</Button></div>
+                    {/* <div><Button className="font-semibold h-12">Update Cart</Button></div> */}
                 </div>
                 <div className="flex px-24  py-10 justify-between">
                 <div className="flex ">

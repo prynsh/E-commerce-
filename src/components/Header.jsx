@@ -1,6 +1,7 @@
 import { AudioOutlined } from '@ant-design/icons';
 import { Input, Space } from 'antd';
 const { Search } = Input;
+import { Button } from "antd"
 import { InputBox } from "./InputBox"
 
 export function Header(){
@@ -18,10 +19,18 @@ export function Header(){
             <div className="flex justify-between px-28 mr-10 pt-14">
                 <div className="font-bold text-4xl pt-2"> Exclusive</div>
                         <div className="flex justify-between space-x-16 pt-4">
-                            <div className="flex">Home</div>
-                            <div>Contact</div>
-                            <div>About</div>
-                            <div>Sign Up</div>
+                        <Button  onClick={()=>{
+                                    navigate('/home')
+                                }} type="text">Home</Button> 
+                            <Button onClick={()=>{
+                                    navigate('/contact')
+                                }} type="text">Contact</Button>
+                            <Button onClick={()=>{
+                                    navigate('/about')
+                                }} type="text">About</Button>
+                            <Button onClick={()=>{
+                                    navigate('/')
+                                }} type="text">SignUp</Button>
                         </div>
                                 <div className=' pt-3'>
                                      <Search

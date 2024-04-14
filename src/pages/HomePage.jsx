@@ -26,9 +26,7 @@ import dog from "../assets/dog.png"
 import makeup from "../assets/makeup.png"
 import shoe from "../assets/shoe.png"
 import services from "../assets/services.png"
-
 import { useNavigate } from 'react-router-dom';
-import { Services } from '../components/Services';
 
 export function HomePage() {
     const navigate = useNavigate();
