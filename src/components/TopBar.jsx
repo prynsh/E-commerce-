@@ -5,11 +5,11 @@ import { Dropdown, Space } from 'antd';
 export function TopBar(){
     const items = [
         {
-          label: <a href="https://www.antgroup.com">English</a>,
+          label: <a href="https://www.amazon.in/">English</a>,
           key: '0',
         },
         {
-          label: <a href="https://www.aliyun.com">Hindi</a>,
+          label: <a href="https://www.google.com/">Hindi</a>,
           key: '1',
         },
         {

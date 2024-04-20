@@ -2,9 +2,10 @@ import { AudioOutlined } from '@ant-design/icons';
 import { Input, Space } from 'antd';
 const { Search } = Input;
 import { Button } from "antd"
-import { InputBox } from "./InputBox"
+import { useNavigate } from 'react-router-dom';
 
 export function Header(){
+    const navigate= useNavigate();
     const suffix = (
         <AudioOutlined
           style={{
@@ -17,7 +18,7 @@ export function Header(){
     return (
         <div className="grid grid-col-2 pb-16">
             <div className="flex justify-between px-28 mr-10 pt-14">
-                <div className="font-bold text-4xl pt-2"> Exclusive</div>
+                <div className="font-bold text-4xl pt-2"><Link to="/home">Exclusive</Link></div>
                         <div className="flex justify-between space-x-16 pt-4">
                         <Button  onClick={()=>{
                                     navigate('/home')

@@ -28,7 +28,7 @@ export function HeaderWithCart(){
     return (
         <div className="grid grid-col-2 pb-5">
             <div className="flex justify-between pl-28 pr-24 mr-10 pt-14">
-                <div className="font-bold text-4xl pt-2"> Exclusive</div>
+                <div className="font-bold text-4xl pt-2"> <Link to="/home">Exclusive</Link></div>
                         <div className="flex justify-between space-x-10 pt-4">
                                 <Button  onClick={()=>{
                                     navigate('/home')

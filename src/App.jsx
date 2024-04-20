@@ -11,6 +11,7 @@ import { Cart } from './pages/Cart';
 import { AllProducts } from './pages/AllProducts';
 import React from 'react';
 import { Trying } from './pages/Trying';
+import { About } from './pages/About';
 
 function App() {
  
@@ -25,6 +26,8 @@ function App() {
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/home' element={<HomePage/>}/>
       <Route path='/allproducts' element={<AllProducts/>}/>
+      <Route path='/about' element={<About/>}/>
+      
       <Route path='/trying' element={<Trying/>}/>
       </Routes>
      
